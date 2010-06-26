@@ -1,0 +1,213 @@
+model model_mp_labcoat {
+	inherit								model_sp_marine
+	mesh								models/md5/characters/npcs_as_player/mp_labcoat.md5mesh
+
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_labcoat_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_labcoat"
+
+	"def_head"					"head_player"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
+
+
+model model_mp_tshirt {
+	inherit								model_sp_marine
+
+	mesh								models/md5/characters/npcs_as_player/mp_tshirt.md5mesh
+	
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_tshirt_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_tshirt "
+
+	"def_head"					"head_player"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
+
+model model_mp_jumpsuit {
+	inherit								model_sp_marine
+
+	mesh								models/md5/characters/npcs_as_player/mp_jumpsuit.md5mesh
+
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_jumpsuit_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_jumpsuit"
+
+	"def_head"					"head_player"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
+
+model model_mp_greenarmor {
+	inherit								model_sp_marine
+
+	mesh								models/md5/characters/npcs_as_player/mp_greenarmor.md5mesh
+
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_greenarmor_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_greenarmor"
+
+	"def_head"					"head_player"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
+
+model model_mp_suit {
+	inherit								model_sp_marine
+
+	mesh								models/md5/characters/npcs_as_player/mp_suit.md5mesh
+
+
+	//mesh								models/md5/characters/npcs_as_player/mp_greenarmor.md5mesh
+	//mesh								models/md5/characters/npcs_as_player/mp_jumpsuit.md5mesh
+	//mesh								models/md5/characters/npcs_as_player/mp_tshirt.md5mesh
+	//mesh								models/md5/characters/npcs_as_player/mp_labcoat.md5mesh
+	//mesh								models/md5/characters/npcs/playermoves/mpplayer.md5mesh
+	//mesh								models/md5/characters/npcs_as_player/mp_security.md5mesh
+	//mesh								models/md5/characters/npcs_as_player/mp_soldier.md5mesh
+
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_suit_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_suit"
+
+	"def_head"					"head_player"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
+
+model model_mp_security {
+	inherit								model_sp_marine
+
+	
+	mesh								models/md5/characters/npcs_as_player/mp_security.md5mesh
+
+	channel torso						( *Waist )
+	channel legs						( *origin -*Waist SPINNER eyecontrol)
+
+	skin								skins/characters/player/marine_mp.skin
+	
+	anim run_forward					models/md5/characters/npcs/playermoves/run_270.md5anim {
+		frame 10						rightfoot
+		frame 19						leftfoot
+	}
+	anim walk							models/md5/characters/npcs/playermoves/jog.md5anim 
+	anim walk_backwards					models/md5/characters/npcs/playermoves/jog_back.md5anim 
+
+	anim walk_strafe_left				models/md5/characters/npcs/playermoves/walk_strafe_left.md5anim 
+
+	anim walk_strafe_right				models/md5/characters/npcs/playermoves/walk_strafe_right.md5anim 
+}
+
+
+entityDef player_security_mp {
+	"inherit"					"player_doommarine_mp"
+	"model"						"model_mp_security"
+
+	"def_head"					"head_security_helmet"
+	"head_joint"					"Shoulders"
+	"copy_joint neckcontrol"			"neckcontrol"
+	"copy_joint headcontrol"			"headcontrol"
+	"copy_joint_world eyecontrol"			"eyecontrol"
+}
